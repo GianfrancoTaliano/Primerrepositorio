@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+*
+/* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+} */
+
+.World-Paddle {
+    text-decoration: none;
+    color: #eee;
+    font-family: 'Fasthand', cursive;
+    font-size: 50px;
+
+}
+
+/* nav estilos*/
+
+nav {
+    background-color: #3f51b5;
+}
+
+.nav-link {
+    font-size: 24px;
+    color: #eee;
+    text-decoration: none;
+    padding: 3px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+
+.custom-navbar {
+    background-color: #3f51b5;
+}
+
+
+.nav-link:hover {
+
+    color: #eee;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 3px;
+}
+  
+.navbar-font {
+    font-size: 30px;
+}
+
+.nav-link-button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+
+
+
+/* Estilos body */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+
+
+/* Estilos para el HEADER */
+
+
+header {
+    background-color: #3f51b5;
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/*  Estilos para el MAIN */
+
+.titulo {
+    text-align: center;
+}
+
+main {
+    background-color: #eee;
+}
+
+.boton {
+    display: flex;
+    background-color: #3f51b5;
+    color: #eee;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 100px;
+
+}
+
+.informacion {
+    background-color: darkgrey;
+    font-size: 18px;
+    padding: 40px 140px;
+    margin: 20px 100px;
+    border-radius: 10px;
+
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 450px;
+    padding: 40px 140px;
+}
+
+/*Estilos main Contacto*/
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    padding: 10px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contacto-text {
+    text-align: center;
+    font-size: 40px;
+}
+
+input {
+    width: 320px;
+    padding: 10px;
+}
+
+input:focus {
+    background-color: #eee;
+}
+
+textarea {
+    width: 320px;
+    padding: 10px;
+    resize: none;
+
+}
+
+textarea:focus {
+    background-color: #eee;
+}
+
+/*Estilos para el FOOTER*/
+
+
+footer {
+    background-color: #3f51b5;
+    text-align: center;
+    font-size: 18px;
+    color: #eee;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+}
+
+
+/*MAIN PALETAS*/
+
+
+
+
+/* GALERIA IMAGENES */
+
+
+.Galeria{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.carousel-inner img {
+    max-height: 400px;
+    object-fit: contain;
+    object-position: center;
+    width: 100%; 
+  }
+
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: black;
+    width: 100px;
+  }
+  
+/* Accesorios */
+
+.card {
+    width: 25%;
+}
+
+
+
+
+
+
+
+/* MEDIAS*/
+
+@media screen and (max-width: 900px) {
+
+    .informacion {
+
+        padding: 10px;
+        margin: 10px;
+        font-size: 12px;
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    iframe {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 110px;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+    input,
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
