@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+* .World-Paddle {
+  text-decoration: none;
+  color: #eee;
+  font-family: "Fasthand", cursive;
+  font-size: 50px;
+}
+
+/* Estilos para el HEADER */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3f51b5;
+  color: #e74141;
+  padding: 20px;
+}
+
+/* nav estilos*/
+nav {
+  background-color: #3f51b5;
+}
+
+.nav-link {
+  font-size: 24px;
+  color: #e74141;
+  text-decoration: none;
+  padding: 3px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.custom-navbar {
+  background-color: #3f51b5;
+}
+
+.nav-link:hover {
+  color: #e74141;
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.navbar-font {
+  font-size: 30px;
+}
+
+.nav-link-button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+/*Estilos para el FOOTER*/
+footer {
+  background-color: #3f51b5;
+  text-align: center;
+  font-size: 18px;
+  color: #e74141;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Estilos body */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/*  Estilos para el MAIN */
+.titulo {
+  text-align: center;
+}
+
+main {
+  background-color: #e74141;
+  min-height: 80%;
+}
+
+.boton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f51b5;
+  color: #e74141;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px 100px;
+}
+
+.informacion {
+  background-color: darkgrey;
+  font-size: 18px;
+  padding: 40px 140px;
+  margin: 20px 100px;
+  border-radius: 10px;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 450px;
+  padding: 40px 140px;
+}
+
+/*Estilos main Contacto*/
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+  padding: 10px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-text {
+  text-align: center;
+  font-size: 40px;
+}
+
+input {
+  width: 320px;
+  padding: 10px;
+}
+
+input:focus {
+  background-color: #e74141;
+}
+
+textarea {
+  width: 320px;
+  padding: 10px;
+  resize: none;
+}
+
+textarea:focus {
+  background-color: #e74141;
+}
+
+/*MAIN PALETAS*/
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  padding: 16px;
+}
+
+.my-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-start;
+  width: 200px;
+  background-color: #818ed9;
+  border: 1px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  max-height: 200px;
+}
+
+.my-card .card-body {
+  padding: 16px;
+}
+
+.my-card .card-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.my-card .card-text {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* GALERIA IMAGENES */
+.Galeria {
+  text-align: center;
+  font-size: 50px;
+}
+
+.carousel-inner img {
+  max-height: 400px;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: black;
+  width: 100px;
+}
+
+/* Accesorios 
+
+.card {
+    width: 25%;
+}
+
+*/
+/* MEDIAS*/
+@media screen and (max-width: 900px) {
+  .informacion {
+    padding: 10px;
+    margin: 10px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  iframe {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 110px;
+  }
+}
+/* Media para Contacto */
+@media (max-width: 480px) {
+  input,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

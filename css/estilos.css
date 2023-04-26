@@ -74,6 +74,9 @@ body {
     overflow-x: hidden;
     position: relative;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
 }
 
 
@@ -98,6 +101,8 @@ header {
 
 main {
     background-color: #eee;
+    min-height: 80%;
+
 }
 
 .boton {
@@ -257,13 +262,13 @@ flex-direction: column;
     width: 100px;
 }
 
-/* Accesorios */
+/* Accesorios 
 
 .card {
     width: 25%;
 }
 
-
+*/
 
 
 

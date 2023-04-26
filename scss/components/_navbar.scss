@@ -1,0 +1,57 @@
+/* Estilos para el HEADER */
+
+
+header {
+    @include flex(row,space-between,center);
+    background-color: $maincolor;
+    color: $secondcolor;
+    padding: 20px;
+}
+
+
+/* nav estilos*/
+
+nav {
+    background-color: $maincolor;
+}
+
+.nav-link {
+    font-size: 24px;
+    color: $secondcolor;
+    text-decoration: none;
+    padding: 3px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+
+
+.custom-navbar {
+    background-color: $maincolor;
+}
+
+
+.nav-link:hover {
+
+    color: $secondcolor;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.navbar-font {
+    font-size: 30px;
+}
+
+.nav-link-button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
