@@ -262,13 +262,7 @@ flex-direction: column;
     width: 100px;
 }
 
-/* Accesorios 
 
-.card {
-    width: 25%;
-}
-
-*/
 
 
 
@@ -302,7 +296,7 @@ flex-direction: column;
 /* Media para Contacto */
 
 @media (max-width: 480px) {
-
+    
     input,
     textarea {
         width: 100%;

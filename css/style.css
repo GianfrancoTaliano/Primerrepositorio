@@ -255,5 +255,8 @@ textarea:focus {
     box-sizing: border-box;
   }
 }
+.gradiente {
+  background: linear-gradient(to right, red, blue);
+}
 
 /*# sourceMappingURL=style.css.map */
