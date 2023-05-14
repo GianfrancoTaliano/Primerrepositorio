@@ -2,57 +2,63 @@
 <html lang="en">
 
 <head>
-    <title>World Paddle</title>
+    <title>World Paddle </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--LINK AL BOOSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!--LINK AL CSS-->
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--LINK AL FONT-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
 
     <!--HEADER-->
 
-    <header>
+    <header class="header-index">
         <a href="index.html" class="World-Paddle">World Paddle</a>
-        <nav>
-            <nav class="navbar navbar-expand-lg custom-navbar">
-                <div class="container-fluid">
-                    <a class="navbar-brand navbar-font" href="index.html">Inicio</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                              <a class="nav-link active navbar-font nav-link-button" aria-current="page" href="paginas/paletas.html">Paletas</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link active navbar-font nav-link-button" href="paginas/accesorios.html">Accesorios</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link active navbar-font nav-link-button" href="paginas/contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link active navbar-font nav-link-button" href="paginas/galeria.html">Galeria</a>
-                            </li>
-                          </ul>   
-                    </div>
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-font" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active navbar-font nav-link-button" aria-current="page"
+                                href="paginas/paletas.html">Paletas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active navbar-font nav-link-button"
+                                href="paginas/accesorios.html">Accesorios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active navbar-font nav-link-button"
+                                href="paginas/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active navbar-font nav-link-button"
+                                href="paginas/galeria.html">Galeria</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav> 
+            </div>
+        </nav>
     </header>
 
     <!--MAIN-->
 
     <main class="gradiente">
-        <section>
-            <h2 class="titulo">Bienvenidos a nuestra página web</h2>
-            <p class="informacion">Esta es una pagina dedicada al paddle y a la venta de productos relacionados con el
+        <section class="cuadro">
+            <h1 class="titulo-principal">Bienvenidos a nuestra página web</h1>
+            <p class="texto-informacion">Esta es una pagina dedicada al paddle y a la venta de productos relacionados
+                con el
                 mismo. Ofrecemos una gran variedad de productos de alta calidad, como raquetas, palas, zapatos, pelotas,
                 etc., para satisfacer todas las necesidades de los jugadores de paddle.
                 Además, nuestra tienda también ofrece consejos de expertos sobre el mejor equipo para cada tipo de
@@ -66,22 +72,71 @@
                 jugando paddle.
                 Si estás buscando los mejores productos de paddle, entonces Paddle World es el lugar perfecto para ti.
                 ¡Visítanos hoy y comienza tu viaje de paddle!</p>
-            <button class="boton">Ver más</button>
+            <a href="paginas/paletas.html" class="boton-principal">Ver mas</a>
         </section>
 
+
         <section>
-            <h2 class="titulo">Donde Encontrarnos</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52536.63304556996!2d-58.50505557911676!3d-34.615802742749246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1679339811796!5m2!1ses-419!2sar"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2 class="titulo-principal">Productos Destacados</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <a href="paginas/paletas.html" target="_blank">
+                            <img src="multimedia/paleta-padel.jpg" class="d-block w-100" alt="Paleta paddle">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block index-carousel">
+                            <h3 class="dsc-product">Paleta Ninbus</h3>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <a href="paginas/paletas.html" target="_blank">
+                            <img src="multimedia/paleta-2.jpg" class="d-block w-100" alt="Paleta paddle">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block index-carousel">
+                            <h3 class="dsc-product">Paleta Wilson</h3>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <a href="paginas/paletas.html" target="_blank">
+                            <img src="multimedia/paleta-3.jpg" class="d-block w-100" alt="Paleta paddle">
+                        </a>
+                        <div class="carousel-caption d-none d-md-block index-carousel">
+                            <h3 class="dsc-product">Paleta Wilson</h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+
+
+        <section>
+            <h3 class="titulo-principal">Donde Encontrarnos</h3>
+            <div class="iframe-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52536.63304556996!2d-58.50505557911676!3d-34.615802742749246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1679339811796!5m2!1ses-419!2sar"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
 
     </main>
 
     <!--FOOTER-->
 
-    <footer>
+    <section class="redes-sociales">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+    </section>
+
+    <footer class="footer-principal">
         <p>1617 Springfield , Buenos Aires, CA 15763, Argentina</p>
         <p>Derechos reservados & copy; 2023</p>
     </footer>

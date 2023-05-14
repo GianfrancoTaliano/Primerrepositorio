@@ -1,173 +1,248 @@
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
 
-/* Estilos body */
-
 body {
-   @include flex(column,stretch,flex-start);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    width: 100%;
-    overflow-x: hidden;
-    position: relative;
-    min-height: 100vh;
-    padding-bottom: 50px;
-}
 
-
-
-/*  Estilos para el MAIN */
-
-.titulo {
-    text-align: center;
-}
-
-main {
-    background-color: $secondcolor;
-    min-height: 80%;
-
-}
-
-.boton {
-    @include flex(row, center, center);
     background-color: $maincolor;
-    color: $secondcolor;
-    padding: 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 20px 100px;
-
+    color: #eeee;
 }
 
-.informacion {
-    background-color: darkgrey;
+.header-index {
+    background-color: $maincolor;
+
+    }
+
+
+.titulo-principal{
+    display: flex;
+    justify-content: center;
+    color: darken($color: $maincolor, $amount: 50%);
+}
+
+.texto-informacion{
+    color: darken($color: $maincolor, $amount: 50%);
     font-size: 18px;
-    padding: 40px 140px;
-    margin: 20px 100px;
-    border-radius: 10px;
+    font-weight:bold
 
 }
 
-iframe {
-    border: none;
-    width: 100%;
-    height: 450px;
-    padding: 40px 140px;
+.boton-principal{
+    background-color: lighten($color: $maincolor, $amount: 5%);
+    color: #eeee;
+
+&:hover {
+    background-color: darken($color: $maincolor, $amount: 40%);
 }
 
-/*Estilos main Contacto*/
+}
 
-form {
+.footer-principal {
+    background-color: darken($color: $maincolor, $amount: 20%);
+    color: #eeee;
+}
 
-    @include flex (column, center, center);
-    gap: 15px;
-    background-color: white;
+.redes-sociales {
+    background-color: darken($color: $maincolor, $amount: 20%);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    a {
+        color: #eeee;
+        font-size: 24px;
+
+        &:hover {
+            color: lighten($color: $maincolor, $amount: 30%);
+        }
+    }
+}
+
+.carousel {
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.dsc-product {
+    color: black;
+    
+}
+
+.index-carousel {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1px;
+    font-size: 10px;
+}
+
+.iframe-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid darken($color: $maincolor, $amount: 40%);
     padding: 10px;
+    margin: auto;
+    max-width: 80%;
 }
 
-form div {
+
+.cuadro {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid darken($color: $maincolor, $amount: 20%);
+    padding: 50px;
+    margin: 80px;
+    border-radius: 10px;
+    background: linear-gradient(to right, $maincolor, darken($maincolor,25%));
+    color: solid darken($color: $maincolor, $amount: 40%);
+}
+
+h2.titulo-principal{
+    font-size: 32px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+a.boton-principal{
+    font-size: 24px;
+    color: darken($color: $maincolor, $amount: 20%);
+    text-decoration: none;
+    border: 2px solid darken($color: $maincolor, $amount: 30%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition:0.3s;
+
+    &:hover{
+        transform: scale(1.1);
+        background-color: $maincolor;
+        color:lighten($color: $maincolor, $amount: 40%)
+    }
 }
 
 
-.contacto-text {
+/* PALETAS*/
+
+.titulo-paletas{
+    margin: 0;
     text-align: center;
-    font-size: 40px;
+    color: darken($color: $maincolor, $amount: 20%);
+    font-size: 60px;
 }
 
-input {
-    width: 320px;
-    padding: 10px;
-}
-
-input:focus {
-    background-color: $secondcolor;
-}
-
-textarea {
-    width: 320px;
-    padding: 10px;
-    resize: none;
-
-}
-
-textarea:focus {
-    background-color: $secondcolor;
-}
-
-/*MAIN PALETAS*/
 
 .card-container {
-    @include flex(column, center, stretch);
-    gap: 30px;
-    padding: 16px;
-}
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+
 
 .my-card {
-    @include flex(column, stretch, flex-start);
-    width: 200px;
-    background-color: #818ed9;
-    border: 1px;
-    border-radius: 6px;
-    margin-bottom: 16px;
+    width: 300px;
+    border: 1px solid lighten($color: $maincolor, $amount: 20%);
+    border-radius: 5px;
+    transition: 0.3s;
 
+
+    .card-body {
+        text-align: center;
+        
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 310px;
+        object-fit: cover;
+    }
 }
 
+.btn{
+    display: inline-block;
+    background-color: darken($color: $maincolor, $amount: 20%);
+    border: none;
+    color:#eeee;
+    margin: 0 0 10px 0;
 
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    max-height: 200px;
+    &:hover{
+        background-color: darken($color: $maincolor, $amount: 30%);
+    }
 }
 
-.my-card .card-body {
-    padding: 16px;
 }
+ /* ESTILOS CONTACTO*/
 
-.my-card .card-title {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 12px;
-
-}
-
-
-.my-card .card-text {
-    font-size: 16px;
-    margin-bottom: 16px;
-}
-
-
-
-
-/* GALERIA IMAGENES */
-
-
-.Galeria {
+ .contacto-text{
+    margin: 0;
     text-align: center;
-    font-size: 50px;
+    color: darken($color: $maincolor, $amount: 20%);
+    font-size: 60px;
 }
+ 
 
+ .contacto-section{
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 100vh;
+padding: 20px;
+   
+ }
 
-.carousel-inner img {
-    max-height: 400px;
-    object-fit: contain;
-    object-position: center;
+ .contact-form{
     width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    padding: 40px;
+    background-color: 20px;
+    background-color: #eeee;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    label{
+        display: block;
+        margin-bottom: 5px;
+
+    }
+
+    input, textarea{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #cccc;
+        border-radius: 5px;
+    }
+
 }
 
 
-.carousel-control-prev,
-.carousel-control-next {
-    background-color: black;
-    width: 100px;
+/* GALERIA */
+
+.galeria, .videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    img, iframe {
+      width: 100%;
+      height: auto;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+      border: 2px solid #cccc;
+    }
+    img:hover {
+        transform: scale(1.05); 
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
+        transition: 1s;
+      }
 }
 
-/* Accesorios 
-
-.card {
-    width: 25%;
+.titulo-galeria{
+    margin: 0;
+    text-align: center;
+    color: darken($color: $maincolor, $amount: 20%);
+    font-size: 60px;
 }
-
-*/

@@ -2,12 +2,25 @@
 
 
 footer {
-    background-color: $maincolor;
+    background-color: darken($color: $maincolor, $amount: 20%);
     text-align: center;
     font-size: 18px;
     color: $secondcolor;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
 
 }
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
+

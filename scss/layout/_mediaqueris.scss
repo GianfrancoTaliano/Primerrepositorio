@@ -1,18 +1,71 @@
 /* MEDIAS*/
-
-@media screen and (max-width: 900px) {
-
-    .informacion {
-
+@media screen and (max-width: 1200px) {
+    .header-index, .redes-sociales, .footer-principal {
         padding: 10px;
-        margin: 10px;
-        font-size: 12px;
-
     }
-
+    .titulo-principal {
+        font-size: 24px;
+    }
+    .texto-informacion {
+        font-size: 16px;
+    }
+    .carousel {
+        width: 50%;
+    }
+    .iframe-container {
+        max-width: 90%;
+    }
+    .cuadro {
+        margin: 40px;
+        padding: 25px;
+    }
+    h2.titulo-principal, a.boton-principal {
+        font-size: 24px;
+    }
 }
 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 500px) {
+    .header-index, .redes-sociales, .footer-principal {
+        padding: 2px;
+    }
+    .titulo-principal {
+        font-size: 16px;
+    }
+    .texto-informacion {
+        font-size: 12px;
+    }
+    .carousel {
+        width: 90%;
+    }
+    .iframe-container {
+        max-width: 98%;
+    }
+    .cuadro {
+        margin: 10px;
+        padding: 15px;
+    }
+    h2.titulo-principal, a.boton-principal {
+        font-size: 16px;
+    }
+}
+
+/* Media Contacto */
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        max-width: 100%; 
+    }
+}
+
+
+/*Media Galeria*/
+
+@media screen and (max-width: 768px) {
+    .galeria,
+    .video {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 
     iframe {
         padding: 10px;
@@ -20,16 +73,4 @@
         margin-bottom: 110px;
 
     }
-
-}
-
-/* Media para Contacto */
-
-@media (max-width: 480px) {
-
-    input,
-    textarea {
-        width: 100%;
-        box-sizing: border-box;
-    }
-}
+  }
